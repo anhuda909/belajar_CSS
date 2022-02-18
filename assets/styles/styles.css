@@ -1,11 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
 body {
-    font-family: sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+   padding: 0;
  }
+ * {
+   box-sizing: border-box;
+}
+ main {
+   padding: 20px;
+   overflow: auto;
+}
  h2,h3 {
     color: #00a2c6
  }
  footer {
     padding: 20px;
     color: white;
-    background-color: #00a2c6
+    background-color: #00a2c6;
+   text-align: center;
+   font-weight: bold;
  }
+   aside {
+      float: right;
+      width: 25%;
+      padding-left: 20px;
+   }
+   
+ /*untuk desain mouse*/
+ a:hover {
+   font-weight: bold; 
+   color: rgb(180, 12, 12);}
+   nav a {
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: none;
+   }
+/*desain class profile */
+   .profile header {
+      text-align: center;
+   }
+   .profile img {
+      width: 200px;
+   }
+   /*desain gambar*/
+   .featured-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+   object-position: center;
+   }
+   /*desain dari artikel*/
+   .card {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+   }
+   #content {
+      float: left;
+      width: 75%;
+   }
+   /*desain dari header*/
+   .jumbotron {
+      font-size: 20px;
+      padding: 60px;
+      background-color: #00c8eb;
+      text-align: center;
+      color: white;
+   }
+   /*desain dari navigasi*/
+   nav li {
+      display: inline;
+      list-style-type: none;
+      margin-right: 20px;
+   }
+   nav {
+      background-color: #00a2c6;
+      padding: 5px;
+      position: sticky;
+      top: 0;
+   }
+   nav a {
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: none;
+      color: white;
+   }
+ /*menyusun layout sesuai dengan hp*/
+   @media screen and (max-width: 1000px) {
+      #content,
+      aside {
+          width: 100%;
+          padding: 0;
+      }
+   }
+   header {
+      display: inline;
+   }
